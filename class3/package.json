@@ -1,0 +1,14 @@
+{
+  "name": "class3",
+  "version": "1.0.0",
+  "description": "javascript class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mah",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
+}
