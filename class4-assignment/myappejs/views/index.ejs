@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <style>
+      table {
+        font-family: arial, sans-serif;
+           border: 1px solid black; 
+          border-collapse: collapse;
+          width: 100%;
+      }
+      th, td {
+        border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+      }
+  </style>
+
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to Dhaka<%= title %></p>
+
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Roll</th>
+        <th>Group</th>
+
+      </tr>
+
+      <% for(var i=0; i<studentArray.length;i++) { %>
+
+          <tr>
+              <td><%= studentArray[i].id %></td>
+              <td><%= studentArray[i].name %></td>
+              <td><%= studentArray[i].address %></td>
+              <td><%= studentArray[i].roll %></td>
+              <td><%= studentArray[i].group %></td>
+            </tr>
+
+      <% } %>
+
+      
+
+    </table>
+  </body>
+</html>
